@@ -18,7 +18,7 @@
 #ifdef _WIN32
 #include <sys/stat.h>
 #endif
-#ifdef __APLE__
+#ifdef __APPLE__
 #include <sys/stat.h>
 #endif
 #include "agrep.h"
