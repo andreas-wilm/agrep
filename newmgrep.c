@@ -15,8 +15,12 @@
 #ifdef __EMX__
 #include <sys/types.h>
 #endif
-
+#ifdef _WIN32
 #include <sys/stat.h>
+#endif
+#ifdef __APLE__
+#include <sys/stat.h>
+#endif
 #include "agrep.h"
 #include "codepage.h"
 

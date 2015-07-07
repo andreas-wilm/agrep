@@ -10,12 +10,16 @@
 #include <ctype.h>
 #include <fcntl.h>
 #include <sys/types.h>
-#include <sys/stat.h>
 #include <errno.h>
 #include "checkfil.h"
 
+#ifdef __APPLE__
+#include <sys/stat.h>
+#endif
+
 #ifdef _WIN32
 #include "config.h"
+#include <sys/stat.h>
 #endif
 
 #ifndef S_ISREG

@@ -55,11 +55,14 @@
 #endif
 
 #include <string.h>
+#ifdef __APPLE__
 #include <sys/stat.h>
+#endif
 #ifdef _WIN32
 #include "config.h"
 #include <malloc.h>
 #include <sys/types.h>
+#include <sys/stat.h>
 #endif
 int  exec();    /* agrep.c */
 
