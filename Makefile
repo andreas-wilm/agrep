@@ -53,13 +53,14 @@ DEFINEFLAGS	= -DHAVE_DIRENT_H=$(HAVE_DIRENT_H)     \
 		  -DS_IFLNK=-1                         \
 		  -Dlstat=stat
 SUBDIRCFLAGS	= -c $(DEFINEFLAGS) $(OPTIMIZEFLAGS)
+SILENTFLAGS = -Wno-pointer-sign -Wno-format
+
 MYDEFINEFLAGS	= -DMEASURE_TIMES=0  \
 		  -DAGREP_POINTER=1  \
 		  -DDOTCOMPRESSED=0
-		
 #		  -Werror=no-unprototyped-calls
 
-CFLAGS		= $(MYDEFINEFLAGS) $(SUBDIRCFLAGS)
+CFLAGS		= $(MYDEFINEFLAGS) $(SUBDIRCFLAGS) $(SILENTFLAGS)
 OTHERLIBS	=
 
 PROG	      = agrep

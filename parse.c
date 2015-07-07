@@ -6,9 +6,9 @@
 
 #ifdef _WIN32
 #include <memory.h>
-#include <stdlib.h>
 #endif
-
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include "re.h"
 

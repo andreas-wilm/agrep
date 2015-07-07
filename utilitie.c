@@ -4,12 +4,13 @@
 
 #include <stdio.h>
 #include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
 #include "re.h"
 
 #ifdef _WIN32
 #include <malloc.h>
 #include <process.h>
-#include <string.h>
 #endif
 
 /************************************************************************/
